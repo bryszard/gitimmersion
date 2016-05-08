@@ -1,8 +1,7 @@
 require 'greeter'
 
-# Default is "World"
-# Author: Jim Weirich
-name = ARGV.first || "World"
+puts "What's your name?"
+my_name = gets.chomp
 
-greeter = Greeter.new(name)
+greeter = Greeter.new(my_name)
 puts greeter.greet
